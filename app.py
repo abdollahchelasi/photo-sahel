@@ -62,7 +62,7 @@ def main():
         image = Image.open(uploaded_image)
 
         # نمایش تصویر قبل از بزرگنمایی
-        st.subheader("تصویر قبل از تغییرات")
+        st.subheader("تصاویر انتخاب شده 🖼️")
         st.image(image, use_column_width=True)
 
         # بزرگنمایی تصویر
@@ -71,7 +71,7 @@ def main():
         resized_image = image.resize((width, height))
 
         # نمایش تصویر بعد از بزرگنمایی
-        st.subheader("تصویر ویرایش شده")
+        st.subheader("تصاویر ویرایش شده")
         st.image(resized_image, use_column_width=True)
 
         # دکمه دانلود تصویر بزرگنمایی شده
